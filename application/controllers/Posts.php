@@ -40,4 +40,8 @@
                 redirect('posts');
             }
         }
+
+        public function delete($id){
+            echo $id;
+        }
     }
