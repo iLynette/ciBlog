@@ -1,5 +1,6 @@
 <h2><?php echo $post['title']; ?></h2>
 <small class="post-date bg-light">Posted on: <?php echo $post['created_at']; ?></small>
+<img style="max-height: 90px;" src="<?php echo site_url(); ?>assets/images/posts/<?php echo $post['post_image']; ?>">
 <img class=""
 <div class="post-body">
     <?php echo $post['body']; ?>
