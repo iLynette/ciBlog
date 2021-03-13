@@ -6,7 +6,6 @@
 
             $this->form_validation->set_rules('name', 'Name', 'required');
             $this->form_validation->set_rules('email', 'Email', 'required');
-            $this->form_validation->set_rules('email', 'Email', 'required');
             $this->form_validation->set_rules('body', 'Body', 'required');
 
             if($this->form_validation->run() ===FALSE){

@@ -26,7 +26,7 @@
                 redirect('posts');
             }
         }
-
+        //login user
         public function login(){
             $data['title'] = 'Sign In';
 
@@ -42,8 +42,10 @@
                
                 //get username
                 $username = $this->input->post('username');
+
                 //get and encrypt the passwpord
                 $password = md5($this->input->post('password'));
+                
                 //login user
                 $user_id = $this->user_model->login($username, $password);
 
